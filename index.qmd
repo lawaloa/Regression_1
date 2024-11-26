@@ -3,7 +3,7 @@ title: "Course 18 | Introduction to Regression with statsmodels in Python"
 author:
   - name:  "Lawal's Note"
     affiliation: "Associate Data Science Course in Python by DataCamp Inc"
-date: "2024-11-20"
+date: "2024-11-21"
 toc: true
 number-sections: true
 highlight-style: pygments
@@ -27,9 +27,13 @@ execute:
 jupyter: python3
 ---
 
+![](Regress_1.jpg)
+
 ## Data Source
 
-Data: The datasets utilized in this course include the Taiwan Real Estate dataset, the Facebook Advertising Workflow dataset, the S&P 500 Yearly Returns dataset, and the Churn dataset. See @tbl-taiwan, @tbl-ad, @tbl-sp500 and @tbl-churn for the column names and descriptions for each dataset.
+Data: The datasets utilized in this course include the Taiwan Real Estate dataset, the S&P 500 Yearly Returns dataset, the Facebook Advertising Workflow dataset, and the Churn dataset. See @tbl-taiwan, @tbl-sp500,  @tbl-ad, and @tbl-churn for the column names and descriptions for each dataset.
+
+You can download the datasets [here](https://github.com/lawaloa/Regression_1/tree/main/datasets){target="_blank"}
 
 ## Chapter 1: Simple Linear Regression Modeling
 
@@ -547,7 +551,7 @@ fig = plt.figure()
 
 sns.regplot(x="n_convenience",
             y="price_twd_msq",
-            data=taiwan_real_estate,
+            data=taiwan,
             ci=None)
 
 # Add a scatter plot layer to the regplot
@@ -2412,6 +2416,6 @@ specificity = TN/(FP+TN)
 print("specificity: ", specificity)
 ```
 
-# References
+## References
 
 - Introduction to Regression with statsmodels in Python in Intermediate Python Course for Associate Data Scientist in Python Carrer Track in DataCamp Inc by Maarten Van den Broeck.
